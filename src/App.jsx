@@ -122,7 +122,7 @@ function App() {
       .post(
         'https://api.groq.com/openai/v1/chat/completions',
         {
-          model: 'meta-llama/llama-4-scout-17b-16e-instruct',
+          model: 'llama-3.3-70b-versatile',
           messages: [
             { role: 'system', content: 'You are a helpful assistant.' },
             { role: 'user', content: text },
