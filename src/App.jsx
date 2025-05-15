@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const apiKey = import.meta.env.VITE_GROQ_API_KEY;
-  console.log(apiKey);
+
   const [chat, setChat] = useState([]);
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
