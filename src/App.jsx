@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+  const apiKey = process.env.VITE_GROQ_API_KEY;
 
   const [chat, setChat] = useState([]);
   const [text, setText] = useState("");
