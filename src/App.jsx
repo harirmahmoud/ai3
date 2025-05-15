@@ -101,7 +101,7 @@ const styleButton = {
       },
       {
         headers: {
-          'Authorization': `Bearer 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`,
+          'Authorization': `Bearer ${API_KEY}`,
           'Content-Type': 'application/json',
         },
       }
