@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
+  const apiKey = import.meta.env.VITE_GROQ_API_KEY;
   const [chat, setChat] = useState([]);
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
@@ -101,7 +102,11 @@ const styleButton = {
       },
       {
         headers: {
-          'Authorization': `Bearer ${API_KEY}`,
+
+          
+
+          'Authorization': `Bearer ${apiKey}`,
+
           'Content-Type': 'application/json',
         },
       }
